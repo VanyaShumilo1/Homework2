@@ -39,13 +39,10 @@ h6 {
 body {
     color: $text-main-color;
     font-size: $text-main-size;
-
-
     background-image: url(../../img/header/bgDecoration.png);
     background-repeat: no-repeat;
     background-position: right 0 top 0;
-    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    padding-bottom: 300px; 
+    padding-bottom: 300px; // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
     @media screen and (max-width: 759.8px) {
         background: none;
@@ -100,3 +97,4 @@ button {
 @import 'blocks/header';
 @import 'blocks/about';
 @import 'blocks/category';
+@import 'blocks/destinations';
