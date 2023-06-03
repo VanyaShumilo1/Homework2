@@ -1,0 +1,102 @@
+.header {
+    padding-top: 43px;
+    font-family: 'GoogleSans', serif;
+    font-weight: 400;
+
+    @media screen and (max-width: 759.8px) {
+        background-color: #FFF1DA;
+    }
+
+    &__menu {
+        @include centered-flex;
+        color: #212832;
+    }
+
+    &__nav {
+        display: flex;
+        gap: 52px;
+
+        @media screen and (max-width: 1199.8px) {
+            gap: 25px;
+        }
+
+        &_mobile {
+            font-family: 'Poppins', sans-serif;
+            font-size: 30px;
+            letter-spacing: 0.2px;
+            color: #737373;
+            text-align: center;
+            display: none;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: 93px;
+            padding-bottom: 98px;
+
+            @media screen and (max-width: 759.8px) {
+                display: flex;
+            }
+        }
+    }
+
+    &__links {
+        @include centered-flex;
+        gap: 52px;
+
+        @media screen and (max-width: 1199.8px) {
+            gap: 25px;
+        }
+
+        @media screen and (max-width: 759.8px) {
+            display: none;
+        }
+    }
+
+    &__link {
+        transition: 0.3s all;
+        &:hover {
+            transform: scale(1.1)
+        }
+    }
+
+
+    &__auth-btns {
+        @include centered-flex;
+        gap: 32px;
+
+        @media screen and (max-width: 1199.8px) {
+            gap: 25px;
+        }
+
+        @media screen and (max-width: 959.8px) {
+            display: none;
+        }
+    }
+
+    &__nav-button {
+        padding: 9px 22px;
+
+        &_sign-up {
+            border: 1px solid #000;
+            border-radius: 5px;
+            transition: 0.3s all;
+            &:hover {
+                background-color: #000;
+                color: #fff;
+            }
+        }
+    }
+
+    &__lang-switcher {
+        @include centered-flex;
+        gap: 4px;
+    }
+
+    .burger {
+        padding-top: 3px;
+        display: none;
+
+        @media screen and (max-width: 759.8px) {
+            display: block;
+        }
+    }
+}

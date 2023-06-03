@@ -1,0 +1,140 @@
+.about {
+    margin-top: 23px;
+
+    &__content {
+        @include centered-flex;
+        gap: 25px;
+
+        @media screen and (max-width: 1199.8px) {
+            flex-direction: column;
+        }
+
+        &_imgs {
+            position: relative;
+            
+
+            @media screen and (max-width: 759.8px) {
+                display: none;
+            }
+
+            .plane {
+                position: absolute;
+            }
+
+            .plane1 {
+                top: 75px;
+                left: 50px;
+
+                &:hover {
+                    animation: flight 3s ease;
+                }
+            }
+
+            .plane2 {
+                top: 100px;
+                right: -10px;
+                z-index: -1;
+            }
+        }
+    }
+
+    &__subtitle {
+        color: $main-red;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+
+        @media screen and (max-width: 759.8px) {
+            display: none;
+        }
+    }
+
+    &__title {
+        font-family: 'Volkhov';
+        font-weight: 700;
+        font-size: 84px;
+        letter-spacing: -0.04em;
+        color: $text-secondary-color;
+        margin-top: 24px;
+        max-width: 545px;
+        line-height: 89px;
+        position: relative;
+
+        @media screen and (max-width: 1399.8px) {
+            font-size: 50px;
+        }
+
+        .mobile-plane {
+            position: absolute;
+            display: none;
+
+            @media screen and (max-width: 759.8px) {
+                display: block;
+                top: -85px;
+                left: -50px;
+            }
+        }
+
+        @media screen and (max-width: 759.8px) {
+            font-size: 48px;
+            padding-left: 30px;
+        }
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+        margin-top: 30px;
+        max-width: 480px;
+
+        @media screen and (max-width: 759.8px) {
+            display: none;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 40px;
+        margin-top: 35px;
+
+        @media screen and (max-width: 1399.8px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+
+
+    .yellow-button {
+        padding: 19px 27px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+        color: #FFFFFF;
+        background: #F1A501;
+        box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+        border-radius: 10px;
+
+    }
+
+    .red-button {
+        @include centered-flex;
+        gap: 20px;
+        max-width: 165px;
+
+        button {
+            padding: 20px;
+            background-color: $main-red;
+            box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+            border-radius: 100%;
+        }
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        color: #686D77;
+    }
+}

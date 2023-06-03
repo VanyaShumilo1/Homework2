@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@600&family=Poppins:wght@400;500;600;700&family=Roboto&family=Volkhov:wght@700&display=swap');
+
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/animations';
+
+@font-face {
+    font-family: 'GoogleSans';
+    src: url(../fonts/GoogleSans-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'GoogleSans';
+    src: url(../fonts/GoogleSans-Medium.ttf);
+    font-weight: 500;
+}
+
+html,
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: $text-main-color;
+    font-size: $text-main-size;
+
+
+    background-image: url(../../img/header/bgDecoration.png);
+    background-repeat: no-repeat;
+    background-position: right 0 top 0;
+    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    padding-bottom: 300px; 
+
+    @media screen and (max-width: 759.8px) {
+        background: none;
+    }
+}
+
+a {
+    color: inherit;
+    display: block;
+}
+
+svg {
+    display: block;
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.container {
+    width: 84%;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: 'Volkhov';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 64px;
+    text-transform: capitalize;
+    color: $text-secondary-color;
+}
+
+.subtitle {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: $text-main-color;
+}
+
+@media screen and (min-width: 2000px) {
+    .container {
+        width: 1600px;
+    }
+}
+
+@import 'blocks/header';
+@import 'blocks/about';
+@import 'blocks/category';
