@@ -506,4 +506,176 @@ button {
 }
 .desitnations .card:nth-child(3) {
   background-image: url(../../img/destinations/eu.png);
+}
+
+.instruction {
+  margin-top: 186px;
+}
+.instruction .container {
+  padding-right: 30px;
+}
+@media screen and (max-width: 627.9px) {
+  .instruction .container {
+    padding-right: 0;
+  }
+}
+.instruction__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 1212.9px) {
+  .instruction__wrapper {
+    justify-content: center;
+  }
+}
+.instruction .blue-blur {
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  transform: translateY(100%);
+  background: #59B1E6;
+  opacity: 0.8;
+  filter: blur(75px);
+  width: 30%;
+  height: 30%;
+  z-index: -1;
+}
+@media screen and (max-width: 1129.9px) {
+  .instruction .blue-blur {
+    transform: translateY(0);
+    bottom: 15%;
+    right: 15%;
+  }
+}
+.instruction__content {
+  max-width: 510px;
+}
+.instruction__list {
+  margin-top: 31px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  line-height: 124.5%;
+}
+.instruction__list_item {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+.instruction__list_item_title {
+  font-weight: 700;
+  font-size: 16px;
+}
+.instruction__trips {
+  background-color: #fff;
+  max-width: 100%;
+  z-index: 1;
+  padding: 20px 25px;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  border-radius: 26px;
+  line-height: 124.5%;
+  position: relative;
+}
+.instruction__trips img {
+  max-width: 100%;
+}
+.instruction__trips_title {
+  margin-top: 26px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.015em;
+  color: #080809;
+}
+.instruction__trips_subtitle {
+  margin-top: 13px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #84829A;
+}
+.instruction__trips_subtitle span {
+  margin-right: 15px;
+}
+.instruction__trips_links {
+  margin-top: 21px;
+  display: flex;
+  gap: 18px;
+}
+.instruction__trips_link {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+  border-radius: 100%;
+}
+.instruction__trips_footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.instruction__trips_counter {
+  display: flex;
+  gap: 15px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #84829A;
+}
+.instruction__trips_like {
+  cursor: pointer;
+}
+.instruction__trips_outgoing {
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  border-radius: 18px;
+  padding: 20px;
+  display: inline-flex;
+  justify-content: flex-start;
+  gap: 11px;
+  position: absolute;
+  bottom: 50px;
+  right: -115px;
+  background: #fff;
+}
+@media screen and (max-width: 627.9px) {
+  .instruction__trips_outgoing {
+    display: none;
+  }
+}
+.instruction__trips_outgoing .instruction__trips_title {
+  margin-top: 6px;
+}
+.instruction__trips_outgoing .instruction__trips_subtitle {
+  margin-top: 0;
+}
+.instruction__trips_outgoing img {
+  width: 50px;
+  height: 50px;
+}
+.instruction__trips_outgoing_progress {
+  margin-top: 14px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.055em;
+}
+.instruction__trips_outgoing_progress span {
+  color: #8A79DF;
+}
+.instruction__trips_outgoing_progress_bar {
+  margin-top: 10px;
+  width: 156px;
+  height: 5px;
+  background: #F5F5F5;
+  border-radius: 30px;
+}
+.instruction__trips_outgoing_progress_completed {
+  width: 40%;
+  height: 100%;
+  border-radius: 5px;
+  background: #8A79DF;
 }/*# sourceMappingURL=main.css.map */
