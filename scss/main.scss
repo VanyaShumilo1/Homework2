@@ -94,14 +94,11 @@ button {
     }
 }
 
-img {
-    mix-blend-mode: luminosity;
-}
-
 @import 'blocks/header';
 @import 'blocks/about';
 @import 'blocks/category';
 @import 'blocks/destinations';
 @import 'blocks/instruction';
 @import 'blocks/testimonails';
-@import 'blocks/top-selling'
+@import 'blocks/top-selling';
+@import 'blocks/subscribe';

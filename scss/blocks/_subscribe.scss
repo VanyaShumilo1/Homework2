@@ -1,0 +1,101 @@
+.subscribe {
+    margin-top: 140px;
+
+    // @media screen and (max-width: 499.9px) {
+    //     display: none;
+    // }
+
+    .container {
+        background: url(../../img/subscribe/bg.png) center center/cover no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 74px;
+        padding: 79px 30px;
+        border-radius: 129px 20px 20px 20px;
+        position: relative;
+
+        @media screen and (max-width: 499.9px) {
+            background: none;
+        }
+    }
+
+    &__title {
+        max-width: 860px;
+        font-weight: 600;
+        font-size: 33px;
+        line-height: 54px;
+        text-align: center;
+
+        @media screen and (max-width: 499.9px) {
+            display: none;
+        }
+    }
+
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 38px;
+
+
+        &_input {
+            width: 420px;
+            border-radius: 10px;
+            padding: 28px;
+            border: none;
+            outline: none;
+
+            @media screen and (max-width: 599.9px) {
+                width: 100%;
+            }
+
+            @media screen and (max-width: 499.9px) {
+                display: none;
+            }
+        }
+
+        &_button {
+            background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+            border-radius: 10px;
+            padding: 25px 50px;
+            font-family: 'Open Sans';
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 23px;
+            text-align: center;
+            color: #FFFFFF;
+            transition: 0.5s all;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__send {
+        position: absolute;
+        top: -15px;
+        right: -15px;
+
+        background: linear-gradient(201.65deg, #747DEF 10.27%, #5E3BE1 100%);
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+
+        svg {
+            transform: scale(0.9);
+        }
+
+        @media screen and (max-width: 499.9px) {
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+        }
+    }
+}

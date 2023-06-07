@@ -99,10 +99,6 @@ button {
     width: 1600px;
   }
 }
-img {
-  mix-blend-mode: luminosity;
-}
-
 .header {
   padding-top: 43px;
   font-family: "GoogleSans", serif;
@@ -782,4 +778,97 @@ img {
   background: #FFFFFF;
   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
   border-radius: 10px;
+}
+
+.subscribe {
+  margin-top: 140px;
+}
+.subscribe .container {
+  background: url(../../img/subscribe/bg.png) center center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 74px;
+  padding: 79px 30px;
+  border-radius: 129px 20px 20px 20px;
+  position: relative;
+}
+@media screen and (max-width: 499.9px) {
+  .subscribe .container {
+    background: none;
+  }
+}
+.subscribe__title {
+  max-width: 860px;
+  font-weight: 600;
+  font-size: 33px;
+  line-height: 54px;
+  text-align: center;
+}
+@media screen and (max-width: 499.9px) {
+  .subscribe__title {
+    display: none;
+  }
+}
+.subscribe__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 38px;
+}
+.subscribe__form_input {
+  width: 420px;
+  border-radius: 10px;
+  padding: 28px;
+  border: none;
+  outline: none;
+}
+@media screen and (max-width: 599.9px) {
+  .subscribe__form_input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 499.9px) {
+  .subscribe__form_input {
+    display: none;
+  }
+}
+.subscribe__form_button {
+  background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+  border-radius: 10px;
+  padding: 25px 50px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;
+  transition: 0.5s all;
+}
+.subscribe__form_button:hover {
+  transform: scale(1.1);
+}
+.subscribe__send {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background: linear-gradient(201.65deg, #747DEF 10.27%, #5E3BE1 100%);
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+.subscribe__send svg {
+  transform: scale(0.9);
+}
+@media screen and (max-width: 499.9px) {
+  .subscribe__send {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
