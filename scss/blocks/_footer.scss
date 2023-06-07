@@ -1,0 +1,106 @@
+.footer {
+    margin-top: 150px;
+
+
+
+    @media screen and (max-width: 499.9px) {
+        background-color: #FFF1DA;
+        padding-top: 13px;
+        padding-bottom: 28px;
+
+        .container {
+            padding-left: 20px;
+        }
+    }
+
+    &__wrappper {
+        display: flex;
+        justify-content: space-between;
+        gap: 80px;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 499.9px) {
+            flex-direction: column;
+            gap: 58px;
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 44px;
+        line-height: 66px;
+        color: #181E4B;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 124.5%;
+
+        @media screen and (max-width: 499.9px) {
+            margin-top: 14px;
+            max-width: 207px;
+        }
+    }
+
+    &__links {
+        @include centered-flex;
+        gap: 90px;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 499.9px) {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: start;
+            gap: 43px;
+        }
+
+        &_title {
+            font-weight: 700;
+            font-size: 21px;
+            line-height: 124.5%;
+            color: #080809;
+        }
+
+        &_list {
+            margin-top: 34px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
+
+    &__socials {
+        @include centered-flex;
+
+        @media screen and (max-width: 499.9px) {
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+
+    &__apps {
+        margin-top: 35px;
+
+        display: grid;
+        place-items: center;
+
+        &_links {
+            @include centered-flex;
+            gap: 7px;
+            margin-top: 15px;
+        }
+    }
+
+    &__email {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 124.5%;
+        text-align: center;
+        margin-top: 85px;
+
+        @media screen and (max-width: 499.9px) {
+            margin-top: 58px;
+        }
+    }
+}
