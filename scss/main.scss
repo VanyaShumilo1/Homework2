@@ -47,6 +47,10 @@ body {
     @media screen and (max-width: 759.8px) {
         background: none;
     }
+
+    @media screen and (max-width: 499.8px) {
+        padding-bottom: 0;
+    }
 }
 
 a {

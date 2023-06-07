@@ -130,7 +130,11 @@
         background: #F1A501;
         box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
         border-radius: 10px;
+        transition: 0.5s all;
 
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     .red-button {
@@ -143,6 +147,11 @@
             background-color: $main-red;
             box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
             border-radius: 100%;
+            transition: 0.5s all;
+
+            &:hover {
+                transform: scale(1.1);
+            }
         }
 
         font-family: 'Poppins';

@@ -54,6 +54,11 @@ body {
     background: none;
   }
 }
+@media screen and (max-width: 499.8px) {
+  body {
+    padding-bottom: 0;
+  }
+}
 
 a {
   color: inherit;
@@ -338,6 +343,10 @@ button {
   background: #F1A501;
   box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
   border-radius: 10px;
+  transition: 0.5s all;
+}
+.about .yellow-button:hover {
+  transform: scale(1.1);
 }
 .about .red-button {
   display: flex;
@@ -356,6 +365,10 @@ button {
   background-color: #DF6951;
   box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
   border-radius: 100%;
+  transition: 0.5s all;
+}
+.about .red-button button:hover {
+  transform: scale(1.1);
 }
 .about__decore {
   position: absolute;
@@ -698,6 +711,10 @@ button {
   justify-content: center;
   background: #f5f5f5;
   border-radius: 100%;
+  transition: 0.5s all;
+}
+.instruction__trips_link:hover {
+  transform: scale(1.1);
 }
 .instruction__trips_footer {
   margin-top: 30px;
@@ -715,6 +732,10 @@ button {
 }
 .instruction__trips_like {
   cursor: pointer;
+  transition: 0.5s all;
+}
+.instruction__trips_like:hover {
+  transform: scale(1.1);
 }
 .instruction__trips_outgoing {
   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
