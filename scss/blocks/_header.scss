@@ -53,11 +53,11 @@
 
     &__link {
         transition: 0.3s all;
+
         &:hover {
             transform: scale(1.1)
         }
     }
-
 
     &__auth-btns {
         @include centered-flex;
@@ -79,6 +79,7 @@
             border: 1px solid #000;
             border-radius: 5px;
             transition: 0.3s all;
+
             &:hover {
                 background-color: #000;
                 color: #fff;

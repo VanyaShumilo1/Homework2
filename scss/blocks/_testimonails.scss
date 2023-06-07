@@ -1,6 +1,10 @@
 .testimonials {
     margin-top: 210px;
 
+    .title {
+        max-width: 409px;
+    }
+
     &__wrapper {
         display: flex;
         gap: 120px;
@@ -11,7 +15,6 @@
             justify-content: center;
         }
     }
-
 
     &__content {
         max-width: 504px;
@@ -31,7 +34,6 @@
             left: 50%;
             top: -15%;
             transform: translateX(-50%);
-
         }
     }
 

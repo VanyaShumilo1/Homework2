@@ -6,6 +6,17 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        position: relative;
+    }
+
+    &__decore {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @media screen and (max-width: 1049.9px) {
+            display: none;
+        }
     }
 
     .title,
@@ -42,7 +53,6 @@
         text-align: center;
         letter-spacing: 0.2px;
         color: #737373;
-
 
         @media screen and (max-width: 668.9px) {
             display: block;

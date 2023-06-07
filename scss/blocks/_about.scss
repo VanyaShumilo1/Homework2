@@ -1,5 +1,22 @@
 .about {
     margin-top: 23px;
+    position: relative;
+    overflow-x: hidden;
+
+    &__blur {
+        position: absolute;
+        width: 478px;
+        height: 496px;
+        top: 10%;
+        left: -23%;
+        background: #D5AEE4;
+        opacity: 0.3;
+        filter: blur(75px);
+
+        @media screen and (max-width: 1199.8px) {
+            display: none;
+        }
+    }
 
     &__content {
         @include centered-flex;
@@ -11,7 +28,6 @@
 
         &_imgs {
             position: relative;
-            
 
             @media screen and (max-width: 759.8px) {
                 display: none;
@@ -104,8 +120,6 @@
         }
     }
 
-
-
     .yellow-button {
         padding: 19px 27px;
         font-weight: 500;
@@ -136,5 +150,16 @@
         font-weight: 500;
         font-size: 17px;
         color: #686D77;
+    }
+
+    &__decore {
+        position: absolute;
+        bottom: 0;
+        right: -5%;
+        display: none;
+
+        @media screen and (max-width: 759.8px) {
+            display: block;
+        }
     }
 }

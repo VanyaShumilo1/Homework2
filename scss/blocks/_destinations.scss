@@ -1,5 +1,17 @@
-.desitnations {
+.destinations {
     margin-top: 115px;
+    position: relative;
+
+    &__decore-plus {
+        display: none;
+
+        @media screen and (max-width: 599.9px) {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -10%;
+        }
+    }
 
     .title,
     .subtitle {
@@ -13,8 +25,7 @@
         align-items: center;
         flex-wrap: wrap;
         gap: 75px;
-
-
+        position: relative;
 
 
         @media screen and (max-width: 827.9px) {
@@ -61,17 +72,26 @@
         width: 310px;
         height: 457px;
 
-        &:nth-child(1) {
+        &:nth-child(2) {
             background-image: url(../../img/destinations/rome.png);
         }
 
-        &:nth-child(2) {
+        &:nth-child(3) {
             background-image: url(../../img/destinations/london.png);
         }
 
-        &:nth-child(3) {
+        &:nth-child(4) {
             background-image: url(../../img/destinations/eu.png);
         }
+    }
 
+    &__decore {
+        position: absolute;
+        right: -70px;
+        top: 30%;
+
+        @media screen and (max-width: 1285.9px) {
+            display: none;
+        }
     }
 }

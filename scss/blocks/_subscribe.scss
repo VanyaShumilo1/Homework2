@@ -1,9 +1,24 @@
 .subscribe {
     margin-top: 140px;
+    position: relative;
 
-    // @media screen and (max-width: 499.9px) {
-    //     display: none;
-    // }
+    &__decore {
+        position: absolute;
+        bottom: -15%;
+        right: 3%;
+
+        @media screen and (max-width: 1680.9px) {
+            right: 2%;
+        }
+
+        @media screen and (max-width: 1399.9px) {
+            right: 0;
+        }
+
+        @media screen and (max-width: 1199.9px) {
+            display: none;
+        }
+    }
 
     .container {
         background: url(../../img/subscribe/bg.png) center center/cover no-repeat;
@@ -79,7 +94,6 @@
         position: absolute;
         top: -15px;
         right: -15px;
-
         background: linear-gradient(201.65deg, #747DEF 10.27%, #5E3BE1 100%);
         width: 70px;
         height: 70px;

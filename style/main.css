@@ -47,7 +47,7 @@ body {
   background-image: url(../../img/header/bgDecoration.png);
   background-repeat: no-repeat;
   background-position: right 0 top 0;
-  padding-bottom: 300px;
+  padding-bottom: 79px;
 }
 @media screen and (max-width: 759.8px) {
   body {
@@ -209,6 +209,23 @@ button {
 
 .about {
   margin-top: 23px;
+  position: relative;
+  overflow-x: hidden;
+}
+.about__blur {
+  position: absolute;
+  width: 478px;
+  height: 496px;
+  top: 10%;
+  left: -23%;
+  background: #D5AEE4;
+  opacity: 0.3;
+  filter: blur(75px);
+}
+@media screen and (max-width: 1199.8px) {
+  .about__blur {
+    display: none;
+  }
 }
 .about__content {
   display: flex;
@@ -340,6 +357,17 @@ button {
   box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
   border-radius: 100%;
 }
+.about__decore {
+  position: absolute;
+  bottom: 0;
+  right: -5%;
+  display: none;
+}
+@media screen and (max-width: 759.8px) {
+  .about__decore {
+    display: block;
+  }
+}
 
 .category {
   margin-top: 100px;
@@ -349,6 +377,17 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+.category__decore {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media screen and (max-width: 1049.9px) {
+  .category__decore {
+    display: none;
+  }
 }
 .category .title,
 .category .subtitle {
@@ -445,27 +484,40 @@ button {
   }
 }
 
-.desitnations {
+.destinations {
   margin-top: 115px;
+  position: relative;
 }
-.desitnations .title,
-.desitnations .subtitle {
+.destinations__decore-plus {
+  display: none;
+}
+@media screen and (max-width: 599.9px) {
+  .destinations__decore-plus {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -10%;
+  }
+}
+.destinations .title,
+.destinations .subtitle {
   text-align: center;
 }
-.desitnations__cards {
+.destinations__cards {
   margin-top: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 75px;
+  position: relative;
 }
 @media screen and (max-width: 827.9px) {
-  .desitnations__cards {
+  .destinations__cards {
     justify-content: center;
   }
 }
-.desitnations .card {
+.destinations .card {
   max-width: 100%;
   border-radius: 0px 0px 24px 24px;
   filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
@@ -474,11 +526,11 @@ button {
   width: 310px;
   height: 457px;
 }
-.desitnations .card:hover {
+.destinations .card:hover {
   transform: scale(1.1);
   filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.03)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.03)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.03)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.03)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.03)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.03));
 }
-.desitnations .card__content {
+.destinations .card__content {
   width: 100%;
   padding: 27px 25px 42px 20px;
   background-color: #fff;
@@ -487,30 +539,63 @@ button {
   border-radius: 0px 0px 20px 20px;
   line-height: 124.5%;
 }
-.desitnations .card__content_top {
+.destinations .card__content_top {
   font-weight: 500;
   font-size: 18px;
   display: flex;
   justify-content: space-between;
 }
-.desitnations .card__content_bottom {
+.destinations .card__content_bottom {
   display: flex;
   gap: 15px;
   font-size: 16px;
   margin-top: 20px;
 }
-.desitnations .card:nth-child(1) {
+.destinations .card:nth-child(2) {
   background-image: url(../../img/destinations/rome.png);
 }
-.desitnations .card:nth-child(2) {
+.destinations .card:nth-child(3) {
   background-image: url(../../img/destinations/london.png);
 }
-.desitnations .card:nth-child(3) {
+.destinations .card:nth-child(4) {
   background-image: url(../../img/destinations/eu.png);
+}
+.destinations__decore {
+  position: absolute;
+  right: -70px;
+  top: 30%;
+}
+@media screen and (max-width: 1285.9px) {
+  .destinations__decore {
+    display: none;
+  }
 }
 
 .instruction {
   margin-top: 186px;
+  position: relative;
+}
+.instruction__decore {
+  display: none;
+}
+@media screen and (max-width: 599.9px) {
+  .instruction__decore {
+    display: block;
+    position: absolute;
+    top: -15%;
+    left: -10%;
+  }
+}
+.instruction__decore-bottom {
+  display: none;
+}
+@media screen and (max-width: 599.9px) {
+  .instruction__decore-bottom {
+    display: block;
+    position: absolute;
+    bottom: -15%;
+    right: 0;
+  }
 }
 .instruction .container {
   padding-right: 30px;
@@ -684,6 +769,9 @@ button {
 .testimonials {
   margin-top: 210px;
 }
+.testimonials .title {
+  max-width: 409px;
+}
 .testimonials__wrapper {
   display: flex;
   gap: 120px;
@@ -782,6 +870,27 @@ button {
 
 .subscribe {
   margin-top: 140px;
+  position: relative;
+}
+.subscribe__decore {
+  position: absolute;
+  bottom: -15%;
+  right: 3%;
+}
+@media screen and (max-width: 1680.9px) {
+  .subscribe__decore {
+    right: 2%;
+  }
+}
+@media screen and (max-width: 1399.9px) {
+  .subscribe__decore {
+    right: 0;
+  }
+}
+@media screen and (max-width: 1199.9px) {
+  .subscribe__decore {
+    display: none;
+  }
 }
 .subscribe .container {
   background: url(../../img/subscribe/bg.png) center center/cover no-repeat;
@@ -875,6 +984,7 @@ button {
 
 .footer {
   margin-top: 150px;
+  position: relative;
 }
 @media screen and (max-width: 499.9px) {
   .footer {

@@ -1,5 +1,28 @@
 .instruction {
     margin-top: 186px;
+    position: relative;
+
+    &__decore {
+        display: none;
+
+        @media screen and (max-width: 599.9px) {
+            display: block;
+            position: absolute;
+            top: -15%;
+            left: -10%;
+        }
+    }
+
+    &__decore-bottom {
+        display: none;
+
+        @media screen and (max-width: 599.9px) {
+            display: block;
+            position: absolute;
+            bottom: -15%;
+            right: 0;
+        }
+    }
 
     .container {
         padding-right: 30px;
@@ -8,7 +31,6 @@
             padding-right: 0;
         }
     }
-
 
     &__wrapper {
         position: relative;
@@ -61,7 +83,6 @@
                 font-weight: 700;
                 font-size: 16px;
             }
-
         }
     }
 
