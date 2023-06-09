@@ -5,15 +5,7 @@
     &__decore {
         position: absolute;
         bottom: -15%;
-        right: 3%;
-
-        @media screen and (max-width: 1680.9px) {
-            right: 2%;
-        }
-
-        @media screen and (max-width: 1399.9px) {
-            right: 0;
-        }
+        right: -90px;
 
         @media screen and (max-width: 1199.9px) {
             display: none;

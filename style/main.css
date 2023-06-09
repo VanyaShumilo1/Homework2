@@ -896,17 +896,7 @@ button {
 .subscribe__decore {
   position: absolute;
   bottom: -15%;
-  right: 3%;
-}
-@media screen and (max-width: 1680.9px) {
-  .subscribe__decore {
-    right: 2%;
-  }
-}
-@media screen and (max-width: 1399.9px) {
-  .subscribe__decore {
-    right: 0;
-  }
+  right: -90px;
 }
 @media screen and (max-width: 1199.9px) {
   .subscribe__decore {
